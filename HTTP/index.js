@@ -15,7 +15,7 @@ if(path.includes('fibonacci')&& metho ==='GET' ){
     return res.end(JSON.stringify({
         data:fibonacci(n)
     }))
-} else if(path.includes('chancked') && metho==='GET'){
+} else if(path.includes('chunk') && metho==='GET'){
 
     res.write('1st')
     res.write('2nd')
