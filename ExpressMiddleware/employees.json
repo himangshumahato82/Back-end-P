@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Mukesh Yadav",
+        "designation": "software Engineer",
+        "date_of_joining": "2020-12-04"
+    },
+    {
+        "id": 2,
+        "name": "Himu",
+        "designation": "software devloper",
+        "date_of_joining": "2021-12-04"
+    },
+    {
+        "id": 4,
+        "name": "Furkan",
+        "designation": "software Engineer",
+        "date_of_joining": "2022-12-04"
+    },
+    {
+        "name": "himu",
+        "designation": "PM",
+        "date_of_joining": "2022-06-06",
+        "id": 5
+    },
+    {
+        "name": "himannn",
+        "designation": "CM",
+        "date_of_joining": "2022-07-06",
+        "id": 6
+    },
+    {
+        "name": "Abhishekh",
+        "designation": "software Engineer",
+        "date_of_joining": "2022-12-04",
+        "id": 7
+    }
+]
