@@ -11,17 +11,7 @@ const data =fs.readFileSync('./README.md',{
 console.log(data)
 
  console.log("himangshu")
-// function logname(bc){
-//   console.log(bc)
-// }
-// // console.log(process.argv)
-// // if (process.argv.length<4){
-// //   process.exit[1];
-// // }
-// logname({
-//   name:process.argv[2],
-//   state:process.argv[3]
-// })
+/
 
 function add(a,b){
  console.log(a+b)
