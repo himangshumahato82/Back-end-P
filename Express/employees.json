@@ -16,17 +16,6 @@
         "name": "Furkan",
         "designation": "software Engineer",
         "date_of_joining": "2022-12-04"
-    },
-    {
-        "name": "himu",
-        "designation": "PM",
-        "date_of_joining": "2022-06-06",
-        "id": 5
-    },
-    {
-        "name": "himannn",
-        "designation": "CM",
-        "date_of_joining": "2022-07-06",
-        "id": 6
     }
+    
 ]
