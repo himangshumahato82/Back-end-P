@@ -1,11 +1,7 @@
 const mongoose=require('mongoose')
+const createdatabase = require('./database/connectdatabase')
 
-async function connectDatabase(){
-  const result= await mongoose.connect('mongodb://127.0.0.1:27017/students')
-
-    return result;
-
-}
+createdatabase
 const students=mongoose.model('students',{
     name:String,
     gender:String,
@@ -62,9 +58,9 @@ await students.updateMany({
 */
 
 let result=await students.deleteOne({
-    _id:"640825e9956ed5e7a388ffba"
+    _id: new ObjectId("640825e9956ed5e7a388ffba") 
 })
-console.log(result)
+console.log()
 let student=await students.find({
     batch:'pt-wb-8'
 })
