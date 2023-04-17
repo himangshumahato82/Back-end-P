@@ -34,6 +34,7 @@ return res.status(500).send({
 })
 }
  })
+ 
  router.patch('/employee/:id', async(req,res)=>{
     try{
     const employee= await updateemployeeById(req.params.id,req.body);
