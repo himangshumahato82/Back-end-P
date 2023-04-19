@@ -1,9 +1,9 @@
     const express=require('express')
-const { getdata, createnewData, updateById } = require('./employees')
+const { getdata, createnewData, updateById, DeleteE } = require('./employees')
     
    const app=express()
 
-   app.use(express.json());
+     app.use(express.json());
    app.get('/employees',async(req,res)=>{
     try{
      const employees=await getdata();
@@ -34,6 +34,7 @@ const { getdata, createnewData, updateById } = require('./employees')
     }
    })
 
+
    app.patch('/employee/:id',async(req,res)=>{
       try{
         const employee= await updateById(req.params.id,req.body)
@@ -47,6 +48,22 @@ const { getdata, createnewData, updateById } = require('./employees')
             messege:"unexpected error"
         })
       }
+   })
+
+
+
+   app.delete('/employee/:id',async(req,res)=>{
+    try{
+      const employee=await DeleteE(req.params.id);
+      return res.send({
+        data:employee
+      })
+    }catch(err){
+      console.log(err)
+      return res.status(500).send({
+        messege:"Unexpected error"
+      })
+    }
    })
 
 
